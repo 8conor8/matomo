@@ -605,7 +605,7 @@ class Visualization extends ViewDataTable
             return Piwik::translate('CoreHome_ReportGeneratedXAgo', $timeAgo);
         }
 
-        $prettyDate = $date->getLocalized(Date::DATE_FORMAT_SHORT);
+        $prettyDate = $date->getLocalized(Date::DATETIME_FORMAT_SHORT);
 
         $timezoneAppend = ' (UTC)';
         return Piwik::translate('CoreHome_ReportGeneratedOn', $prettyDate) . $timezoneAppend;
